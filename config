@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[submodule]
+	active = .
+[remote "origin"]
+	url = https://github.com/rzaluska/deoplete-rtags.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "rap"]
+	url = git@github.com:rodolfoap/deoplete-rtags.git
+	fetch = +refs/heads/*:refs/remotes/rap/*
+[branch "fixes-rap"]
+	remote = rap
+	merge = refs/heads/fixes-rap
