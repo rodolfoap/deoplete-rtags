@@ -83,7 +83,7 @@ class Source(Base):
 
     def get_rc_command(self, file_name, line, column, offset):
         # TODO change string to table
-        command = "rc --absolute-path --synchronous-completions"
+        command = "rtags-rc --absolute-path --synchronous-completions"
         command += " --json"
         command += " -l {filename}:{line}:{column}"
         command += " --unsaved-file={filename}:{offset}"
